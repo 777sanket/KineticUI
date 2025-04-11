@@ -5,7 +5,12 @@ import ComponentDetailPage from "../../shared/ComponentDetailPage";
 
 // Generate static pages for all components
 export async function generateStaticParams() {
-  const paths: { categoryId: string; componentId: string }[] = [];
+  interface Path {
+    categoryId: string;
+    componentId: string;
+  }
+
+  const paths: Path[] = [];
 
   categories.forEach((category) => {
     category.components.forEach((component) => {
@@ -44,17 +49,15 @@ export async function generateMetadata({
   };
 }
 
-export default async function ComponentPage({
+export default function ComponentPage({
   params,
 }: {
-  params: Promise<{ categoryId: string; componentId: string }>;
+  params: { categoryId: string; componentId: string };
 }) {
-  const resolvedParams = await params;
-
   return (
     <ComponentDetailPage
-      categoryId={resolvedParams.categoryId}
-      componentId={resolvedParams.componentId}
+      categoryId={params.categoryId}
+      componentId={params.componentId}
     />
   );
 }
