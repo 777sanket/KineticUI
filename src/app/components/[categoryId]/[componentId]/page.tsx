@@ -49,15 +49,19 @@ export async function generateMetadata({
   };
 }
 
-export default function ComponentPage({
-  params,
-}: {
-  params: { categoryId: string; componentId: string };
-}) {
+interface PageProps {
+  params: {
+    categoryId: string;
+    componentId: string;
+  };
+}
+
+export default function ComponentPage({ params }: PageProps) {
+  const { categoryId, componentId } = params;
+
   return (
-    <ComponentDetailPage
-      categoryId={params.categoryId}
-      componentId={params.componentId}
-    />
+    <div className="px-4 md:px-12 py-10">
+      <ComponentDetailPage categoryId={categoryId} componentId={componentId} />
+    </div>
   );
 }
