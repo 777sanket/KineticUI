@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import categories from "@/app/data/categories";
 // import ComponentDetailPage from "@/app/components/ComponentDetailPage";
-import ComponentDetailPage from "../../shared/ComponentDetailPage";
+import ComponentDetailPage from "../../ComponentDetailPage";
 
 // Generate static pages for all components
 export async function generateStaticParams() {
