@@ -44,15 +44,17 @@ export async function generateMetadata({
   };
 }
 
-export default function ComponentPage({
+export default async function ComponentPage({
   params,
 }: {
-  params: { categoryId: string; componentId: string };
+  params: Promise<{ categoryId: string; componentId: string }>;
 }) {
+  const resolvedParams = await params;
+
   return (
     <ComponentDetailPage
-      categoryId={params.categoryId}
-      componentId={params.componentId}
+      categoryId={resolvedParams.categoryId}
+      componentId={resolvedParams.componentId}
     />
   );
 }
