@@ -107,7 +107,7 @@ export default function ComponentLibrary() {
                 <Code className="text-white" size={20} />
               </div>
               <h1 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-                Kineyic UI
+                Kinetic UI
               </h1>
             </div>
             <button
@@ -410,7 +410,7 @@ export default function ComponentLibrary() {
                 <div className="bg-gradient-to-r from-blue-500 to-indigo-500 w-8 h-8 rounded-md flex items-center justify-center">
                   <Code className="text-white" size={16} />
                 </div>
-                <h3 className="text-xl font-bold">Kineyic UI</h3>
+                <h3 className="text-xl font-bold">Kinetic UI</h3>
               </div>
               <p className="text-gray-400 max-w-sm">
                 A collection of beautiful, animated UI components for modern web
@@ -513,7 +513,7 @@ export default function ComponentLibrary() {
           </div>
           <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Kineyic UI. All rights reserved.
+              &copy; {new Date().getFullYear()} Kinetic UI. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a
