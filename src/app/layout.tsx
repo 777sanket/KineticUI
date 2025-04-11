@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kinetic-Ui",
   icons: {
-    icon: "/3dBox.png",
+    icon: "/3DBox.png",
   },
   description:
     "A collection of animated React components for your next project",
