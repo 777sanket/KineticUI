@@ -1,6 +1,7 @@
 import { ComponentCategory } from "../types";
 import textComponents from "./text-components";
 import backgroundComponents from "./background-components";
+import buttonComponents from "./button-components";
 
 const categories: ComponentCategory[] = [
   {
@@ -12,6 +13,11 @@ const categories: ComponentCategory[] = [
     name: "Background",
     id: "background",
     components: backgroundComponents,
+  },
+  {
+    name: "Buttons",
+    id: "buttons",
+    components: buttonComponents,
   },
   // Add more categories here as needed
 ];
