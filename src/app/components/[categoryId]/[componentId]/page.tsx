@@ -5,7 +5,7 @@ import ComponentDetailPage from "../../shared/ComponentDetailPage";
 
 // Generate static pages for all components
 export async function generateStaticParams() {
-  const paths = [];
+  const paths: { categoryId: string; componentId: string }[] = [];
 
   categories.forEach((category) => {
     category.components.forEach((component) => {

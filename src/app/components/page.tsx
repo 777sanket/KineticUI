@@ -146,20 +146,20 @@ export default function ComponentLibrary() {
             >
               Home
             </Link>
-            <a
+            <Link
               href="/docs"
               className="px-3 py-2 text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors"
             >
               Docs
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white rounded-lg text-sm font-medium transition-colors"
             >
               GitHub
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -169,12 +169,12 @@ export default function ComponentLibrary() {
             Home
           </Link>
           <ChevronRight size={14} className="mx-2" />
-          <a
+          <Link
             href="/components"
             className="hover:text-blue-600 transition-colors"
           >
             Components
-          </a>
+          </Link>
           {!isSearching && currentCategory && (
             <>
               <ChevronRight size={14} className="mx-2" />
@@ -424,28 +424,28 @@ export default function ComponentLibrary() {
                 </h4>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Documentation
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       API Reference
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Examples
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -455,28 +455,28 @@ export default function ComponentLibrary() {
                 </h4>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       GitHub
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Discord
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Twitter
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -484,28 +484,28 @@ export default function ComponentLibrary() {
                 <h4 className="text-lg font-semibold mb-3 text-white">Legal</h4>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Terms of Service
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       License
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -516,7 +516,7 @@ export default function ComponentLibrary() {
               &copy; {new Date().getFullYear()} Kinetic UI. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -532,8 +532,8 @@ export default function ComponentLibrary() {
                     d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.137 20.164 22 16.42 22 12c0-5.523-4.477-10-10-10z"
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -545,7 +545,7 @@ export default function ComponentLibrary() {
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

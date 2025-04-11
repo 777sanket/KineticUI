@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 // Animated Text Component for Preview
 const TypewriterText = () => {
@@ -100,13 +101,13 @@ const LandingPage = () => {
             </div>
             <h1 className="text-2xl font-bold text-gray-800">Kinetic-Ui</h1>
           </div>
-          <a
+          <Link
             href="/components"
             className="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-semibold text-sm text-white hover:bg-blue-700 transition-colors"
           >
             Component Library
             <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -124,18 +125,18 @@ const LandingPage = () => {
             <TypewriterText />
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a
+            <Link
               href="/components"
               className="px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
             >
               Explore Components
-            </a>
-            <a
+            </Link>
+            <Link
               href="/documentation"
               className="px-8 py-4 bg-white text-blue-600 border border-blue-200 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors shadow-md hover:shadow-lg"
             >
               Read Docs
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -181,13 +182,13 @@ const LandingPage = () => {
 
           <div className="text-center">
             <FadedText />
-            <a
+            <Link
               href="/components"
               className="mt-8 inline-flex items-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
             >
               View All Components
               <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -297,12 +298,12 @@ const LandingPage = () => {
             Start implementing beautiful animations in minutes with our
             copy-paste component library.
           </p>
-          <a
+          <Link
             href="/components"
             className="px-8 py-4 bg-white text-blue-600 rounded-lg text-lg font-semibold hover:bg-blue-300 transition-colors shadow-lg"
           >
             Get Started Now
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -327,28 +328,28 @@ const LandingPage = () => {
                 <h3 className="text-lg font-semibold mb-4">Resources</h3>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="/components"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Components
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/documentation"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Documentation
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/tutorials"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Tutorials
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -357,28 +358,28 @@ const LandingPage = () => {
                 <h3 className="text-lg font-semibold mb-4">Company</h3>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="/about"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/blog"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/contact"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -387,28 +388,28 @@ const LandingPage = () => {
                 <h3 className="text-lg font-semibold mb-4">Legal</h3>
                 <ul className="space-y-2">
                   <li>
-                    <a
+                    <Link
                       href="/privacy"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Privacy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/terms"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Terms
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/license"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       License
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -420,7 +421,7 @@ const LandingPage = () => {
               &copy; {new Date().getFullYear()} Kinetic-Ui. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -433,8 +434,8 @@ const LandingPage = () => {
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -451,7 +452,7 @@ const LandingPage = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
