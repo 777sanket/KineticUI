@@ -49,14 +49,14 @@ export async function generateMetadata({
   };
 }
 
-interface PageProps {
+type Props = {
   params: {
     categoryId: string;
     componentId: string;
   };
-}
+};
 
-export default function ComponentPage({ params }: PageProps) {
+export default function ComponentPage({ params }: Props) {
   const { categoryId, componentId } = params;
 
   return (
