@@ -13,7 +13,7 @@ export default function ComponentLibrary() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
             UI Component Library
@@ -46,10 +46,10 @@ export default function ComponentLibrary() {
               About This Library
             </h2>
             <p className="text-gray-600">
-              Welcome to our component library! Here you'll find a collection of
-              ready-to-use animated components for your Next.js, React, and
-              Tailwind CSS projects. Browse components by category in the
-              sidebar.
+              Welcome to our component library! Here you&apos;ll find a
+              collection of ready-to-use animated components for your Next.js,
+              React, and Tailwind CSS projects. Browse components by category in
+              the sidebar.
             </p>
           </div>
 
