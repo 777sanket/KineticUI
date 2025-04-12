@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import categories from "./data/categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://Kinetic-ui.vercel.app";
+  const baseUrl = "https://kinetic-ui.vercel.app";
 
   // Add base pages
   const routes = [

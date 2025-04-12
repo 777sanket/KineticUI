@@ -127,6 +127,7 @@ import { useState } from "react";
 import { getComponent } from "../../registry";
 import { ComponentCategory } from "../../types";
 import type { RegistryCategories, ComponentType } from "../../registry"; // Import the types
+import ComponentJsonLd from "../SEO/ComponentJsonLd";
 
 interface ComponentDetailProps {
   categories: ComponentCategory[];
@@ -211,38 +212,44 @@ const ComponentDetail: React.FC<ComponentDetailProps> = ({
   };
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden">
-      <div className="bg-gray-100 p-4 border-b border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-800">{component.name}</h2>
-        <p className="text-gray-600 mt-2">{component.description}</p>
-      </div>
-
-      <div className="border-b border-gray-200">
-        <div className="flex flex-wrap">
-          {[
-            "preview",
-            "installation",
-            "component",
-            "usage",
-            "customization",
-          ].map((tab) => (
-            <button
-              key={tab}
-              className={`px-4 py-2 ${
-                activeTab === tab
-                  ? "bg-blue-500 text-white"
-                  : "text-gray-600 hover:bg-gray-100"
-              }`}
-              onClick={() => setActiveTab(tab as ComponentType)}
-            >
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
-            </button>
-          ))}
+    <>
+      {/* Add the JSON-LD component here */}
+      {component && category && (
+        <ComponentJsonLd component={component} categoryName={category.name} />
+      )}
+      <div className="border border-gray-200 rounded-lg overflow-hidden">
+        <div className="bg-gray-100 p-4 border-b border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-800">{component.name}</h2>
+          <p className="text-gray-600 mt-2">{component.description}</p>
         </div>
-      </div>
 
-      <div className="p-6">{renderTabContent()}</div>
-    </div>
+        <div className="border-b border-gray-200">
+          <div className="flex flex-wrap">
+            {[
+              "preview",
+              "installation",
+              "component",
+              "usage",
+              "customization",
+            ].map((tab) => (
+              <button
+                key={tab}
+                className={`px-4 py-2 ${
+                  activeTab === tab
+                    ? "bg-blue-500 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+                onClick={() => setActiveTab(tab as ComponentType)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="p-6">{renderTabContent()}</div>
+      </div>
+    </>
   );
 };
 
