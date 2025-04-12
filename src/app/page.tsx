@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Code } from "lucide-react";
 
 // Animated Text Component for Preview
 const TypewriterText = () => {
@@ -96,10 +97,16 @@ const LandingPage = () => {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
               <span className="text-white font-bold">K</span>
             </div>
-            <h1 className="text-2xl font-bold text-gray-800">Kinetic-Ui</h1>
+            <h1 className="text-2xl font-bold text-gray-800">Kinetic-Ui</h1> */}
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center">
+              <Code className="text-white" size={20} />
+            </div>
+            <h1 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+              Kinetic UI
+            </h1>
           </div>
           <Link
             href="/components"
@@ -313,10 +320,16 @@ const LandingPage = () => {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-8 md:mb-0">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center">
+                {/* <div className="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center">
                   <span className="text-white font-bold">K</span>
                 </div>
-                <span className="text-xl font-bold">Kinetic-Ui</span>
+                <span className="text-xl font-bold">Kinetic-Ui</span> */}
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                  <Code className="text-white" size={20} />
+                </div>
+                <h1 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                  Kinetic UI
+                </h1>
               </div>
               <p className="text-gray-400 max-w-md">
                 Beautiful animated UI components for modern web applications.

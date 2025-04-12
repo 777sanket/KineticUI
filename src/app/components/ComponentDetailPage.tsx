@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import ComponentDetail from "./shared/ComponentDetail";
 import categories from "../data/categories";
 
