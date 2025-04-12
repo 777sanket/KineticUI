@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-import categories from "@/app/data/categories";
-import ComponentDetail from "@/app/components/shared/ComponentDetail";
+import { useState, useEffect } from "react";
+import ComponentDetail from "./shared/ComponentDetail";
+import categories from "../data/categories";
 
 interface ComponentDetailPageProps {
   categoryId: string;
@@ -14,65 +13,49 @@ export default function ComponentDetailPage({
   categoryId,
   componentId,
 }: ComponentDetailPageProps) {
+  // Add JSON-LD structured data for SEO
   const category = categories.find((cat) => cat.id === categoryId);
   const component = category?.components.find(
     (comp) => comp.id === componentId
   );
 
-  if (!category || !component) {
-    return <div className="p-8">Component not found</div>;
-  }
+  useEffect(() => {
+    // This will update the title for better SEO
+    if (component && category) {
+      document.title = `${component.name} | Kinetic UI Components`;
+    }
+  }, [component, category]);
 
   return (
-    <div className="p-6">
-      {/* Breadcrumb for navigation and SEO */}
-      <div className="flex items-center text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:text-blue-600">
-          Home
-        </Link>
-        <ChevronRight size={14} className="mx-2" />
-        <Link href="/components" className="hover:text-blue-600">
-          Components
-        </Link>
-        <ChevronRight size={14} className="mx-2" />
-        <Link
-          href={`/components/${categoryId}`}
-          className="hover:text-blue-600"
-        >
-          {category.name}
-        </Link>
-        <ChevronRight size={14} className="mx-2" />
-        <span className="text-gray-700">{component.name}</span>
-      </div>
-
-      <h1 className="text-3xl font-bold mb-2">{component.name}</h1>
-      <p className="text-gray-600 mb-8">{component.description}</p>
+    <>
+      {/* Add structured data for SEO */}
+      {component && category && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: `${component.name} | Kinetic UI`,
+              applicationCategory: "WebApplication",
+              operatingSystem: "Web",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              description: component.description,
+              category: category.name,
+            }),
+          }}
+        />
+      )}
 
       <ComponentDetail
         categories={categories}
         categoryId={categoryId}
         componentId={componentId}
       />
-
-      {/* Add JSON-LD structured data for this component */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: `${component.name} | Kinetic UI`,
-            description: component.description,
-            applicationCategory: "Web Component",
-            operatingSystem: "Any",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-            },
-          }),
-        }}
-      />
-    </div>
+    </>
   );
 }
