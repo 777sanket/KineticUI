@@ -53,6 +53,33 @@ const backgroundComponents: ComponentData[] = [
       customizationPath: "/ui/background/wave-bg-3/CustomizationCode",
     },
   },
+  {
+    id: "stellar-shimmer",
+    name: "Stellar Shimmer",
+    description:
+      "A beautiful space background with twinkling stars of various colors and a subtle central glow.",
+    previewPath: "/ui/background/stellar-shimmer/PreviewCode",
+    files: {
+      installationPath: "/ui/background/stellar-shimmer/InstallationCode",
+      componentPath: "/ui/background/stellar-shimmer/ComponentCode",
+      usagePath: "/ui/background/stellar-shimmer/UsageCode",
+      customizationPath: "/ui/background/stellar-shimmer/CustomizationCode",
+    },
+  },
+
+  {
+    id: "matrix-rain",
+    name: "Matrix Rain",
+    description:
+      "A digital rain effect inspired by The Matrix, featuring glowing streaks and particles on a dark background.",
+    previewPath: "/ui/background/matrix-rain/PreviewCode",
+    files: {
+      installationPath: "/ui/background/matrix-rain/InstallationCode",
+      componentPath: "/ui/background/matrix-rain/ComponentCode",
+      usagePath: "/ui/background/matrix-rain/UsageCode",
+      customizationPath: "/ui/background/matrix-rain/CustomizationCode",
+    },
+  },
   // Add more background components here as needed
 ];
 

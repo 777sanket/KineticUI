@@ -26,6 +26,20 @@ import WaveBackground3Component from "../components/ui/background/wave-bg-3/Comp
 import WaveBackground3Usage from "../components/ui/background/wave-bg-3/UsageCode";
 import WaveBackground3Customization from "../components/ui/background/wave-bg-3/CustomizationCode";
 
+//stellar-shimmer
+import StellarShimmerPreview from "../components/ui/background/stellar-shimmer/PreviewCode";
+import StellarShimmerInstallation from "../components/ui/background/stellar-shimmer/InstallationCode";
+import StellarShimmerComponent from "../components/ui/background/stellar-shimmer/ComponentCode";
+import StellarShimmerUsage from "../components/ui/background/stellar-shimmer/UsageCode";
+import StellarShimmerCustomization from "../components/ui/background/stellar-shimmer/CustomizationCode";
+
+//matrix-rain
+import MatrixRainPreview from "../components/ui/background/matrix-rain/PreviewCode";
+import MatrixRainInstallation from "../components/ui/background/matrix-rain/InstallationCode";
+import MatrixRainComponent from "../components/ui/background/matrix-rain/ComponentCode";
+import MatrixRainUsage from "../components/ui/background/matrix-rain/UsageCode";
+import MatrixRainCustomization from "../components/ui/background/matrix-rain/CustomizationCode";
+
 // Export the background components registry
 export const backgroundComponents = {
   "gradient-background": {
@@ -56,5 +70,20 @@ export const backgroundComponents = {
     usage: WaveBackground3Usage,
     customization: WaveBackground3Customization,
   },
+  "stellar-shimmer": {
+    preview: StellarShimmerPreview,
+    installation: StellarShimmerInstallation,
+    component: StellarShimmerComponent,
+    usage: StellarShimmerUsage,
+    customization: StellarShimmerCustomization,
+  },
+  "matrix-rain": {
+    preview: MatrixRainPreview,
+    installation: MatrixRainInstallation,
+    component: MatrixRainComponent,
+    usage: MatrixRainUsage,
+    customization: MatrixRainCustomization,
+  },
+
   // Add more background components here as needed
 };
