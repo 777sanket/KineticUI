@@ -80,6 +80,19 @@ const backgroundComponents: ComponentData[] = [
       customizationPath: "/ui/background/matrix-rain/CustomizationCode",
     },
   },
+  {
+    id: "misty-aura",
+    name: "Misty Aura",
+    description:
+      "An ethereal fog effect with dynamic colors and interactive movement powered by Vanta.js.",
+    previewPath: "/ui/background/misty-aura/PreviewCode",
+    files: {
+      installationPath: "/ui/background/misty-aura/InstallationCode",
+      componentPath: "/ui/background/misty-aura/ComponentCode",
+      usagePath: "/ui/background/misty-aura/UsageCode",
+      customizationPath: "/ui/background/misty-aura/CustomizationCode",
+    },
+  },
   // Add more background components here as needed
 ];
 

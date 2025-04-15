@@ -40,6 +40,13 @@ import MatrixRainComponent from "../components/ui/background/matrix-rain/Compone
 import MatrixRainUsage from "../components/ui/background/matrix-rain/UsageCode";
 import MatrixRainCustomization from "../components/ui/background/matrix-rain/CustomizationCode";
 
+//Misty Aura
+import MistyAuraPreview from "../components/ui/background/misty-aura/PreviewCode";
+import MistyAuraInstallation from "../components/ui/background/misty-aura/InstallationCode";
+import MistyAuraComponent from "../components/ui/background/misty-aura/ComponentCode";
+import MistyAuraUsage from "../components/ui/background/misty-aura/UsageCode";
+import MistyAuraCustomization from "../components/ui/background/misty-aura/CustomizationCode";
+
 // Export the background components registry
 export const backgroundComponents = {
   "gradient-background": {
@@ -83,6 +90,13 @@ export const backgroundComponents = {
     component: MatrixRainComponent,
     usage: MatrixRainUsage,
     customization: MatrixRainCustomization,
+  },
+  "misty-aura": {
+    preview: MistyAuraPreview,
+    installation: MistyAuraInstallation,
+    component: MistyAuraComponent,
+    usage: MistyAuraUsage,
+    customization: MistyAuraCustomization,
   },
 
   // Add more background components here as needed
