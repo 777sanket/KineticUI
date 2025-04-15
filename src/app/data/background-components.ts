@@ -54,6 +54,19 @@ const backgroundComponents: ComponentData[] = [
     },
   },
   {
+    id: "cosmic-voyage",
+    name: "Cosmic Voyage",
+    description:
+      "An interactive 3D space scene with stars, planets, and orbital controls powered by Three.js and React Three Fiber.",
+    previewPath: "/ui/background/cosmic-voyage/PreviewCode",
+    files: {
+      installationPath: "/ui/background/cosmic-voyage/InstallationCode",
+      componentPath: "/ui/background/cosmic-voyage/ComponentCode",
+      usagePath: "/ui/background/cosmic-voyage/UsageCode",
+      customizationPath: "/ui/background/cosmic-voyage/CustomizationCode",
+    },
+  },
+  {
     id: "stellar-shimmer",
     name: "Stellar Shimmer",
     description:

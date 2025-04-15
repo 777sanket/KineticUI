@@ -26,6 +26,13 @@ import WaveBackground3Component from "../components/ui/background/wave-bg-3/Comp
 import WaveBackground3Usage from "../components/ui/background/wave-bg-3/UsageCode";
 import WaveBackground3Customization from "../components/ui/background/wave-bg-3/CustomizationCode";
 
+//Cosmic Voyage
+import CosmicVoyagePreview from "../components/ui/background/cosmic-voyage/PreviewCode";
+import CosmicVoyageInstallation from "../components/ui/background/cosmic-voyage/InstallationCode";
+import CosmicVoyageComponent from "../components/ui/background/cosmic-voyage/ComponentCode";
+import CosmicVoyageUsage from "../components/ui/background/cosmic-voyage/UsageCode";
+import CosmicVoyageCustomization from "../components/ui/background/cosmic-voyage/CustomizationCode";
+
 //stellar-shimmer
 import StellarShimmerPreview from "../components/ui/background/stellar-shimmer/PreviewCode";
 import StellarShimmerInstallation from "../components/ui/background/stellar-shimmer/InstallationCode";
@@ -76,6 +83,13 @@ export const backgroundComponents = {
     component: WaveBackground3Component,
     usage: WaveBackground3Usage,
     customization: WaveBackground3Customization,
+  },
+  "cosmic-voyage": {
+    preview: CosmicVoyagePreview,
+    installation: CosmicVoyageInstallation,
+    component: CosmicVoyageComponent,
+    usage: CosmicVoyageUsage,
+    customization: CosmicVoyageCustomization,
   },
   "stellar-shimmer": {
     preview: StellarShimmerPreview,
