@@ -54,6 +54,13 @@ import MistyAuraComponent from "../components/ui/background/misty-aura/Component
 import MistyAuraUsage from "../components/ui/background/misty-aura/UsageCode";
 import MistyAuraCustomization from "../components/ui/background/misty-aura/CustomizationCode";
 
+//Mystic Highlands
+import MysticHighlandsPreview from "../components/ui/background/mystic-highlands/PreviewCode";
+import MysticHighlandsInstallation from "../components/ui/background/mystic-highlands/InstallationCode";
+import MysticHighlandsComponent from "../components/ui/background/mystic-highlands/ComponentCode";
+import MysticHighlandsUsage from "../components/ui/background/mystic-highlands/UsageCode";
+import MysticHighlandsCustomization from "../components/ui/background/mystic-highlands/CustomizationCode";
+
 // Export the background components registry
 export const backgroundComponents = {
   "gradient-background": {
@@ -112,6 +119,12 @@ export const backgroundComponents = {
     usage: MistyAuraUsage,
     customization: MistyAuraCustomization,
   },
-
+  "mystic-highlands": {
+    preview: MysticHighlandsPreview,
+    installation: MysticHighlandsInstallation,
+    component: MysticHighlandsComponent,
+    usage: MysticHighlandsUsage,
+    customization: MysticHighlandsCustomization,
+  },
   // Add more background components here as needed
 };

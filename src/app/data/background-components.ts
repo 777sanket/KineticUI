@@ -106,6 +106,19 @@ const backgroundComponents: ComponentData[] = [
       customizationPath: "/ui/background/misty-aura/CustomizationCode",
     },
   },
+  {
+    id: "mystic-highlands",
+    name: "Mystic Highlands",
+    description:
+      "A mystical 3D terrain with fog and dynamic lighting, creating an immersive mountainous landscape.",
+    previewPath: "/ui/background/mystic-highlands/PreviewCode",
+    files: {
+      installationPath: "/ui/background/mystic-highlands/InstallationCode",
+      componentPath: "/ui/background/mystic-highlands/ComponentCode",
+      usagePath: "/ui/background/mystic-highlands/UsageCode",
+      customizationPath: "/ui/background/mystic-highlands/CustomizationCode",
+    },
+  },
   // Add more background components here as needed
 ];
 
